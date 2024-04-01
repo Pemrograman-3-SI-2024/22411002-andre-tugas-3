@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Andre Edyson</title>
+  </head>
+  <body class="mx-auto max-w-[2560px]">
+    <!-- Desktop Navigation Bar -->
+    <header class="sticky top-0 z-30">
+      <nav class="relative bg-[#161616] px-6 text-white">
+        <div class="flex h-16 items-center justify-between">
+          <a href="/" class="flex items-center">
+            <img src="assets/logo.png" alt="Logo AE" class="size-12" />
+            <h1
+              class="hidden text-base font-bold sm:block md:text-lg lg:text-xl"
+            >
+              Andre Edyson
+            </h1>
+          </a>
+          <div
+            class="hidden gap-8 text-sm md:flex lg:-ml-[30px] lg:gap-12 lg:text-base"
+          >
+            <a href="#hero" class="nav-link font-medium">Home</a>
+            <a href="#stacks" class="nav-link font-medium">Stacks</a>
+            <a href="#about" class="nav-link font-medium">About</a>
+            <a href="#projects" class="nav-link font-medium">Projects</a>
+            <a href="#education" class="nav-link font-medium">Education</a>
+          </div>
+          <div class="hidden md:block">
+            <a href="#contact">
+              <button
+                class="rounded-md bg-[#a11fcf]/50 px-6 py-2 text-sm outline outline-[#a11fcf] duration-300 hover:bg-[#a11fcf] lg:text-base"
+              >
+                Contact
+              </button>
+            </a>
+          </div>
+          <!-- Hamburger Menu Icon -->
+          <div class="block text-white md:hidden">
+            <input
+              type="checkbox"
+              id="menu-toggle"
+              class="menu-toggle hidden"
+            />
+            <label for="menu-toggle" class="block cursor-pointer md:hidden">
+              <i class="fas fa-bars fa-2x" id="hamb"></i>
+              <i class="fas fa-times fa-2x hidden" id="close"></i>
+            </label>
+          </div>
+        </div>
+      </nav>
+      <!-- Hamburger Menu Navigation Menu -->
+      <div
+        class="menu absolute z-[1] flex h-screen w-full flex-col items-center gap-6 bg-[#161616] p-6 text-sm text-white md:hidden"
+      >
+        <a href="#hero" class="nav-link font-medium">Home</a>
+        <a href="#stacks" class="nav-link font-medium">Stacks</a>
+        <a href="#about" class="nav-link font-medium">About</a>
+        <a href="#projects" class="nav-link font-medium">Projects</a>
+        <a href="#education" class="nav-link font-medium">Education</a>
+        <a href="#contact" class="nav-link font-medium">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero flex h-[500px] items-center justify-center" id="hero">
+      <div class="hero-overlay" />
+      <div
+        class="flex flex-col items-center justify-center gap-12 px-6 text-center md:flex-row md:px-20 md:text-start"
+      >
+        <div class="">
+          <img src="assets/logo-hero.png" alt="Logo AE" class="w-52 md:w-96" />
+        </div>
+
+        <div class="space-y-2 text-white sm:w-[400px] md:w-[500px]">
+          <h2 class="text-3xl font-extrabold lg:text-4xl">
+            Hi, I'm <br class="sm:hidden" /><span class="text-[#FD4EEF]"
+              >Andre Edyson.</span
+            >
+          </h2>
+          <span class="text-lg font-semibold lg:text-xl"
+            >I build things for the web.</span
+          >
+          <p class="text-sm lg:text-justify lg:text-base">
+            As a Junior Front-End Web Developer, I'm passionate about crafting
+            seamless user experiences. My goal is creating websites that look
+            great, work flawlessly, and are easy to navigate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stacks Section -->
+    <section class="px-6 py-16 text-white" id="stacks">
+      <div class="mb-8 flex flex-col items-center space-y-1">
+        <h3 class="text-3xl font-semibold lg:text-4xl">Tech Stacks</h3>
+        <p
+          class="text-center text-base font-light md:text-lg lg:w-[500px] lg:text-xl"
+        >
+          Here are some tech stacks / languages I use to help me design and
+          build my project
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-6">
+        <!-- 4 Grid Card Tech Stacks -->
+        <div
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8"
+        >
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/f2ce4039c99cf35adde738583ab0fbcd60eaafccf1e949884bda91d0b5c819ce/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667"
+              alt="html"
+              width="72"
+            />
+          </div>
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/0da944f181647261c840e34b20ed7e3ca44ddc150869c6ea550cf98d06c81a37/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667"
+              alt="css"
+              width="72"
+            />
+          </div>
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/16bbe3c62e06c0099a8bd86816b7993b3eb49d8cd21eb74c7bff7db7dc3787b7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667"
+              alt="javascript"
+              width="72"
+            />
+          </div>
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0 md:max-lg:col-start-2"
+          >
+            <img
+              src="https://camo.githubusercontent.com/4478f70ad623b56fecc3f4f26be3bd2cbbfed80dc7d9a1b0492aa60fb79371f6/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f747970657363726970742f747970657363726970742d6f726967696e616c2e737667"
+              alt="typescript"
+              width="72"
+            />
+          </div>
+        </div>
+        <!-- 3 Grid Card Tech Stacks -->
+        <div
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-8"
+        >
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/aed5f69c00ea3fd8c8bc70b89d236efae340eb3024526fd11bcba51c80c4aa40/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f72656163742f72656163742d6f726967696e616c2e737667"
+              alt="react"
+              width="72"
+            />
+          </div>
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/81d02cb68c5e106de831cae5a2a8a696e806c925e49913646f46570049564fdc/68747470733a2f2f64326e6972316a34736f7538657a2e636c6f756466726f6e742e6e65742f77702d636f6e74656e742f75706c6f6164732f323032312f31322f6e6578746a732d626f696c6572706c6174652d6c6f676f2e706e67"
+              alt="nextjs"
+              width="72"
+            />
+          </div>
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/715a6f393c6bd25a1aa150d54de8821690cbf5191d0b48ee5f16d626e71e715c/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f7461696c77696e646373732f7461696c77696e646373732d6f726967696e616c2e737667"
+              alt="tailwind"
+              width="72"
+            />
+          </div>
+        </div>
+        <!-- 2 Grid Card Tech Stacks -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-8">
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/fa7b069c7bd562bfdc03e1409061ab035f80731ba334d9f5b964fd25f4e6eb0e/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d6f6e676f64622f6d6f6e676f64622d706c61696e2d776f72646d61726b2e737667"
+              alt="mongodb"
+              width="72"
+            />
+          </div>
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/a37232e5d1c5536ee1d8b7f6529c466ec40fe414d01ff456467219e3372dbffb/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6669676d612f6669676d612d6f726967696e616c2e737667"
+              alt="figma"
+              width="72"
+            />
+          </div>
+        </div>
+        <!-- 1 Grid Card Tech Stack -->
+        <div class="grid grid-cols-1 gap-4 lg:gap-8">
+          <div
+            class="flex w-[200px] cursor-pointer items-center justify-center rounded-md bg-[#343434] px-10 py-6 grayscale duration-300 hover:-translate-y-1 hover:grayscale-0"
+          >
+            <img
+              src="https://camo.githubusercontent.com/38827655e1ae0e1518d635ad89e8aa46b7f977c795952245c36a2d58064f1803/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6769742f6769742d6f726967696e616c2e737667"
+              alt="git"
+              width="72"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section
+      class="relative overflow-hidden bg-[#161616] px-6 py-16 text-white"
+      id="about"
+    >
+      <div class="mb-8 flex flex-col items-center space-y-1">
+        <h3 class="text-3xl font-semibold lg:text-4xl">About Me</h3>
+        <p
+          class="text-center text-base font-light md:text-lg lg:w-[480px] lg:text-xl"
+        >
+          A quick glance about myself
+        </p>
+      </div>
+
+      <img
+        src="assets/ellipse-bg.png"
+        alt=""
+        class="absolute left-0 top-0 hidden lg:block"
+      />
+      <img
+        src="assets/ellipse-bg.png"
+        alt=""
+        class="absolute right-0 top-[-10px] hidden rotate-90 lg:block"
+      />
+      <img
+        src="assets/dotted.png"
+        alt=""
+        class="absolute bottom-10 left-72 hidden md:block"
+      />
+      <img
+        src="assets/dotted.png"
+        alt=""
+        class="absolute bottom-10 right-72 hidden md:block"
+      />
+
+      <div class="flex flex-col items-center justify-center gap-6">
+        <p class="z-20 text-justify text-sm md:text-base lg:w-[600px]">
+          My journey into web development began when my parents bought me my
+          <span class="font-semibold text-[#FD4EEF] underline"
+            >first laptop</span
+          >
+          at 10, sparking my interest in internet exploration. In 8th grade, I
+          discovered
+          <span class="font-semibold text-[#FD4EEF] underline"
+            >web development</span
+          >
+          in a
+          <span class="font-semibold text-[#FD4EEF] underline"
+            >computer class</span
+          >, sparking my passion for the field. I dived into HTML, CSS, and
+          Javascript, later advancing to technologies like
+          <span class="font-semibold text-[#61DAFB] underline">React</span> and
+          <span class="font-semibold text-[#c4c4c4] underline">Next.js</span>
+          through various projects. Now, I'm learning MongoDB for my databases,
+          aiming to create visually appealing and user-friendly websites.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="px-6 py-16 text-white" id="projects">
+      <div class="mb-8 flex flex-col items-center space-y-1">
+        <h3 class="text-3xl font-semibold lg:text-4xl">Projects</h3>
+        <p
+          class="text-center text-base font-light md:text-lg lg:w-[500px] lg:text-xl"
+        >
+          I have created variety of projects with the tech stacks / languages
+          I’ve learned. Here are some of it.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col items-center justify-center gap-6 md:px-20 lg:gap-16 lg:px-40"
+      >
+        <!-- CineReel Projects -->
+        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-10">
+          <div>
+            <img
+              src="assets/cinereel.png"
+              alt="cinereel"
+              class="rounded-md object-cover lg:max-w-[450px]"
+            />
+          </div>
+
+          <div class="lg:w-[470px]">
+            <a
+              href="https://cinereel.vercel.app/"
+              target="_blank"
+              class="mb-2 text-xl font-bold duration-300 hover:text-[#fd4eef] lg:text-3xl"
+            >
+              CineReel
+            </a>
+
+            <div
+              class="mb-4 flex items-center gap-4 font-semibold text-[#838fac]"
+            >
+              <p>Next.js</p>
+              <p>MongoDB</p>
+              <p>shadcn</p>
+            </div>
+
+            <p class="mb-4 text-justify">
+              Next.js and MongoDB-powered movie database web app with shadcn for
+              seamless browsing, adding favorites, writing reviews, accessing
+              movie details and giving ratings.
+            </p>
+
+            <div class="flex items-center gap-4 text-xl lg:text-2xl">
+              <a href="https://github.com/andreedyson/cinereel" target="_blank">
+                <i
+                  class="fa-brands fa-github text-gray-500 duration-300 hover:-translate-y-0.5 hover:text-white"
+                ></i>
+              </a>
+              <a href="https://cinereel.vercel.app/" target="_blank">
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-gray-500 duration-300 hover:-translate-y-0.5 hover:text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Suxz Projects -->
+        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-10">
+          <div class="order-last lg:order-none lg:w-[470px]">
+            <a
+              href="https://andreedyson.github.io/suxz/"
+              target="_blank"
+              class="mb-2 text-xl font-bold duration-300 hover:text-[#fd4eef] lg:text-3xl"
+            >
+              Suxz
+            </a>
+
+            <div
+              class="mb-4 flex items-center gap-4 font-semibold text-[#838fac]"
+            >
+              <p>ReactJS</p>
+              <p>Tailwind</p>
+            </div>
+
+            <p class="mb-4 text-justify">
+              An online mentoring platform to increase self-confidence by
+              training people developing a creative work. Build using ReactJS
+              and TailwindCSS.
+            </p>
+
+            <div class="flex items-center gap-4 text-xl lg:text-2xl">
+              <a href="https://github.com/andreedyson/suxz" target="_blank">
+                <i
+                  class="fa-brands fa-github text-gray-500 duration-300 hover:-translate-y-0.5 hover:text-white"
+                ></i>
+              </a>
+              <a href="https://andreedyson.github.io/suxz/" target="_blank">
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-gray-500 duration-300 hover:-translate-y-0.5 hover:text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="assets/suxz.jpg"
+              alt="suxz"
+              class="rounded-md object-cover lg:max-w-[450px]"
+            />
+          </div>
+        </div>
+
+        <!-- Destinize Projects -->
+        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-10">
+          <div>
+            <img
+              src="assets/destinize.jpg"
+              alt="Destinize"
+              class="rounded-md object-cover lg:max-w-[450px]"
+            />
+          </div>
+
+          <div class="lg:w-[470px]">
+            <a
+              href="https://andreedyson.github.io/destinize-page/"
+              target="_blank"
+              class="mb-2 text-xl font-bold duration-300 hover:text-[#fd4eef] lg:text-3xl"
+            >
+              Destinize
+            </a>
+
+            <div
+              class="mb-4 flex items-center gap-4 font-semibold text-[#838fac]"
+            >
+              <p>Javascript</p>
+              <p>TailwindCSS</p>
+            </div>
+
+            <p class="mb-4 text-justify">
+              A UI slicing for discovering new vacation spot, find the perfect
+              getaway in Indonesia. Checkout gallery and blog for inspiration,
+              and hear what other travelers testimonials.
+            </p>
+
+            <div class="flex items-center gap-4 text-xl lg:text-2xl">
+              <a
+                href="https://github.com/andreedyson/destinize-page"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-github text-gray-500 duration-300 hover:-translate-y-0.5 hover:text-white"
+                ></i>
+              </a>
+              <a
+                href="https://andreedyson.github.io/destinize-page/"
+                target="_blank"
+              >
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square text-gray-500 duration-300 hover:-translate-y-0.5 hover:text-white"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="bg-[#161616] px-6 py-16 text-white" id="education">
+      <div class="mb-8 flex flex-col items-center space-y-1">
+        <h3 class="text-3xl font-semibold lg:text-4xl">Education</h3>
+        <p
+          class="text-center text-base font-light md:text-lg lg:w-[500px] lg:text-xl"
+        >
+          Here are a quick review of my education journey.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col items-center justify-center gap-6 md:px-20 lg:gap-16 lg:px-40"
+      >
+        <!-- Education Card -->
+        <div
+          class="relative z-10 flex flex-col gap-16 before:absolute before:left-1/2 before:z-[-2] before:h-full before:w-1 before:-translate-x-1/2 before:rounded-full before:bg-[#444444] lg:pl-8 lg:before:left-0"
+        >
+          <div
+            class="relative max-w-[480px] rounded-xl border-4 border-[#444444] bg-[#343434] p-3 lg:p-5 lg:before:absolute lg:before:left-[-47px] lg:before:top-[-8px] lg:before:size-6 lg:before:rounded-full lg:before:border-4 lg:before:border-[#161616] lg:before:bg-pink-500"
+          >
+            <div class="mb-3 flex items-center gap-4">
+              <div class="grid size-12 place-items-center rounded-md bg-white">
+                <img
+                  src="https://www.dbl.id/uploads/school/21890/931-SMA_IMMANUEL_BANDAR_LAMPUNG.png"
+                  alt=""
+                  width="32"
+                />
+              </div>
+              <div>
+                <h4 class="text-base font-bold md:text-lg">
+                  SD Immanuel Bandar Lampung
+                </h4>
+                <span class="text-sm">2012 - 2016</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 font-semibold">Avg. Grade: 80,00</p>
+              <p class="font-light">
+                Graduated from SD Immanuel Bandar Lampung in 2016.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative max-w-[480px] rounded-xl border-4 border-[#444444] bg-[#343434] p-5 lg:before:absolute lg:before:left-[-47px] lg:before:top-[-8px] lg:before:size-6 lg:before:rounded-full lg:before:border-4 lg:before:border-[#161616] lg:before:bg-pink-500"
+          >
+            <div class="mb-3 flex items-center gap-4">
+              <div class="grid size-12 place-items-center rounded-md bg-white">
+                <img
+                  src="https://www.dbl.id/uploads/school/21890/931-SMA_IMMANUEL_BANDAR_LAMPUNG.png"
+                  alt=""
+                  width="32"
+                />
+              </div>
+              <div>
+                <h4 class="text-base font-bold md:text-lg">
+                  SMP Immanuel Bandar Lampung
+                </h4>
+                <span class="text-sm">2016 - 2019</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 font-semibold">Avg. Grade: 85,00</p>
+              <p class="font-light">
+                Graduated from SMP Immanuel Bandar Lampung in 2019.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative max-w-[480px] rounded-xl border-4 border-[#444444] bg-[#343434] p-5 lg:before:absolute lg:before:left-[-47px] lg:before:top-[-8px] lg:before:size-6 lg:before:rounded-full lg:before:border-4 lg:before:border-[#161616] lg:before:bg-pink-500"
+          >
+            <div class="mb-3 flex items-center gap-4">
+              <div class="grid size-12 place-items-center rounded-md bg-white">
+                <img
+                  src="https://www.dbl.id/uploads/school/21890/931-SMA_IMMANUEL_BANDAR_LAMPUNG.png"
+                  alt=""
+                  width="32"
+                />
+              </div>
+              <div>
+                <h4 class="text-base font-bold md:text-lg">
+                  SMA Immanuel Bandar Lampung
+                </h4>
+                <span class="text-sm">2019 - 2022</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 font-semibold">Avg. Grade: 83,00</p>
+              <p class="font-light">
+                Graduated from SMA Immanuel Bandar Lampung in 2022.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative max-w-[480px] rounded-xl border-4 border-[#444444] bg-[#343434] p-5 lg:before:absolute lg:before:left-[-47px] lg:before:top-[-8px] lg:before:size-6 lg:before:rounded-full lg:before:border-4 lg:before:border-[#161616] lg:before:bg-pink-500"
+          >
+            <div class="mb-3 flex items-center gap-4">
+              <div class="grid size-12 place-items-center rounded-md bg-white">
+                <img
+                  src="https://ubl.ac.id/wp-content/uploads/2019/01/LOGO-UBL.png"
+                  alt=""
+                  width="32"
+                />
+              </div>
+              <div>
+                <h4 class="text-base font-bold md:text-lg">
+                  Universitas Bandar Lampung
+                </h4>
+                <span class="text-sm">2022 - Present</span>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 font-semibold">Bachelor of Information System</p>
+              <p class="font-light">
+                Undergraduate students majoring Information System in University
+                of Bandar Lampung
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="px-6 py-16 text-white" id="contact">
+      <div class="mb-8 flex flex-col items-center space-y-1">
+        <h3 class="text-3xl font-semibold lg:text-4xl">Contact Me</h3>
+        <p
+          class="text-center text-base font-light md:text-lg lg:w-[500px] lg:text-xl"
+        >
+          Here are a quick review of my education journey.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center">
+        <form class="flex flex-col items-center justify-center gap-4">
+          <div class="flex w-[300px] flex-col gap-2 lg:w-[400px]">
+            <label for="name" class="text-sm font-semibold">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="name"
+              class="rounded-md p-2 px-4 text-black"
+            />
+          </div>
+          <div class="flex w-[300px] flex-col gap-2 lg:w-[400px]">
+            <label for="name" class="text-sm font-semibold">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              class="rounded-md p-2 px-4 text-black"
+            />
+          </div>
+          <div class="flex w-[300px] flex-col gap-2 lg:w-[400px]">
+            <label for="message" class="text-sm font-semibold">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter a message"
+              id="message"
+              class="rounded-md p-4 text-black"
+            ></textarea>
+          </div>
+          <button
+            class="w-[300px] rounded-md bg-[#de45d2] py-2 font-semibold lg:w-[400px]"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <div class="my-12 font-bold">OR</div>
+
+        <div class="flex items-center gap-4">
+          <a
+            href="https://github.com/andreedyson"
+            target="_blank"
+            class="icon github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://instagram.com/andreedyson"
+            target="_blank"
+            class="icon instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://wa.me/6281367172191"
+            target="_blank"
+            class="icon whatsapp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="mx-4 border-t-4 border-t-gray-700 p-8 text-center text-white"
+    >
+      <p>
+        Created by
+        <span class="font-bold text-[#de45d2]">Andre Edyson</span> using HTML
+        and TailwindCSS
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

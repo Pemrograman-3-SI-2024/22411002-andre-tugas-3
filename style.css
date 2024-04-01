@@ -1,0 +1,124 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+body {
+  background: linear-gradient(to bottom right, #262626, #252525, #161616);
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  position: relative;
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    color: #a11fcf;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #a11fcf;
+    left: 0;
+    bottom: -5px;
+    transition: 300ms ease-in-out;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.menu {
+  transform: translateY(-150%);
+  z-index: -1;
+  transition: 300ms ease-in-out;
+}
+
+.hero {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(assets/hero-overlay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    z-index: -1;
+  }
+}
+
+.card-dot {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #fd4eef;
+    border: 4px solid #161616;
+    border-radius: 50%;
+    top: -8px;
+    left: -47px;
+  }
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.github {
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background: black;
+  }
+}
+
+.instagram {
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      #feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf,
+      #4f5bd5
+    );
+  }
+}
+
+.whatsapp {
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    background: limegreen;
+  }
+}
