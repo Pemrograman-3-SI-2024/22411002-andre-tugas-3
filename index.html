@@ -621,13 +621,17 @@
             ></textarea>
           </div>
           <button
-            class="w-[300px] rounded-md bg-[#de45d2] py-2 font-semibold lg:w-[400px]"
+            class="w-[300px] rounded-md bg-[#de45d2] py-2 font-semibold lg:w-[400px] duration-300 hover:bg-[#de45d2]/60"
           >
             Send Message
           </button>
         </form>
 
-        <div class="my-12 font-bold">OR</div>
+        <div class="flex items-center relative my-12">
+          <div class="flex-grow h-px w-32 bg-gray-500"></div>
+          <div class="mx-4 text-gray-500 font-semibold">OR</div>
+          <div class="flex-grow h-px w-32 bg-gray-500"></div>
+        </div>
 
         <div class="flex items-center gap-4">
           <a
